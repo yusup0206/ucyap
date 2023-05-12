@@ -1,0 +1,42 @@
+.about-us {
+  width: 100%;
+  background: $tertiary;
+  min-height: calc(100vh - 60px);
+}
+
+.about-us-inner {
+  width: 100%;
+  padding: 100px 40px;
+  @include flex(center, center, row);
+  gap: 100px;
+}
+
+.about-us-text {
+  width: 100%;
+  @include flex(flex-start, center, column);
+
+  h3 {
+    font-size: 36px;
+    color: $primary;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  p {
+    font-size: 21px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+}
+
+.about-us-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 170px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

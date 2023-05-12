@@ -1,0 +1,11 @@
+.contact {
+  width: 100%;
+  background: $tertiary;
+  min-height: calc(100vh - 60px);
+}
+
+.contact-inner {
+  width: 100%;
+  padding: 100px 40px;
+  @include flex(center, center, row);
+}
