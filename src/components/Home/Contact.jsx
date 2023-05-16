@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ContactImg from '../../assets/images/contact.jpg';
 import Shape2 from '../../assets/images/shape2.png';
 import { FaPhoneAlt } from 'react-icons/fa';
@@ -17,61 +15,67 @@ const Contact = () => {
           <div className="contact-card">
             <form action="" className="contact-form">
               <h3>Say Hi!</h3>
-              <p>We'd like to talk with you.</p>
+              <p>We d like to talk with you.</p>
 
               <div className="input-group">
-                <label htmlFor="">My name is</label>
-                <input type="text" placeholder="Full name" />
+                <label htmlFor="name">My name is</label>
+                <input id="name" type="text" placeholder="Full name" />
               </div>
               <div className="input-group">
-                <label htmlFor="">My email is</label>
-                <input type="email" placeholder="Email" />
+                <label htmlFor="email">My email is</label>
+                <input id="email" type="email" placeholder="Email" />
               </div>
               <div className="input-group">
-                <label htmlFor="">Your message</label>
+                <label htmlFor="message">Your message</label>
                 <textarea
                   name=""
-                  id=""
+                  id="message"
                   cols="30"
                   rows="10"
                   placeholder="I want to say thay..."
                 ></textarea>
               </div>
-              <button>Send message</button>
+              <button className="link-btn">Send message</button>
             </form>
             <div className="contact-info">
               <div className="bg-img">
                 <img src={ContactImg} alt="" />
               </div>
-              <div className="shape">{/* <img src={Shape2} alt="" /> */}</div>
-              <div className="contact-info-text">
-                <h3>Contact In formation</h3>
-                <p>
-                  Fill up the form and our Team will get back to you within 24
-                  hours.
-                </p>
-                <a href="#">
-                  <FaPhoneAlt />
-                  (+40) 772 100 200
-                </a>
-                <a href="#">
-                  <FaEnvelope />
-                  hello@indium-technology.com
-                </a>
-                <a href="#">
-                  <FaMapMarkerAlt />
-                  Deák Ferenc utca 23.2.emelet, Budapest, 1052,HU
-                </a>
-                <div className="social-links">
+              <div className="bg-fon"></div>
+              <div className="bg-gradient"></div>
+              <div className="shape2">
+                <img src={Shape2} alt="" />
+              </div>
+              <div className="contact-info-text-wrapper">
+                <div className="contact-info-text">
+                  <h3>Contact In formation</h3>
+                  <p>
+                    Fill up the form and our Team will get back to you within 24
+                    hours.
+                  </p>
                   <a href="#">
-                    <FaFacebookSquare />
+                    <FaPhoneAlt />
+                    (+40) 772 100 200
                   </a>
                   <a href="#">
-                    <FaInstagram />
+                    <FaEnvelope />
+                    hello@indium-technology.com
                   </a>
                   <a href="#">
-                    <FaLinkedin />
+                    <FaMapMarkerAlt />
+                    Deák Ferenc utca 23.2.emelet, Budapest, 1052,HU
                   </a>
+                  <div className="social-links">
+                    <a href="#">
+                      <FaFacebookSquare />
+                    </a>
+                    <a href="#">
+                      <FaInstagram />
+                    </a>
+                    <a href="#">
+                      <FaLinkedin />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -7,7 +7,9 @@
 .mission-inner {
   width: 100%;
   padding: 100px 40px;
-  @include flex(center, center, row);
+  // @include flex(center, center, row);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
 
